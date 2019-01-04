@@ -1,0 +1,294 @@
+body,
+html {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	direction: rtl;
+	font-family: "Heebo", sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.spacing {
+	color: white;
+	font-size: 1.8rem;
+}
+
+.oz-nadlan--landing-page {
+	background-color: white;
+	padding-top: 0.5rem;
+	&__logo {
+		padding-top: 0.5rem;
+		width: 150px;
+		height: auto;
+		margin: auto;
+		img {
+			position: absolute;
+			width: 150px;
+			height: auto;
+			border: 1px solid #56636b;
+		}
+	}
+	&__wrapper {
+		padding-top: 1rem;
+		max-width: 1300px;
+		margin: auto;
+		&--images-container {
+			display: flex;
+			flex-direction: row;
+			&__first {
+				flex: 1;
+				&--image {
+					background-image: url("assets/Penthouse 3 half - Print.jpg");
+					height: 350px;
+					background-size: cover;
+					img {
+						width: 100%;
+						height: auto;
+					}
+				}
+				&--text {
+					background-color: #bdd3e0;
+					height: 15rem;
+					text-align: center;
+					&__title {
+						font-size: 4rem;
+						// padding: 0.5rem 0;
+					}
+					&__details {
+						font-size: 1.4rem;
+						width: 70%;
+						margin: auto;
+					}
+				}
+			}
+			&__second {
+				flex: 1;
+				&--image {
+					background-image: url("assets/Dira_4_Gan._PRINT.jpg");
+					height: 350px;
+					background-size: cover;
+					img {
+						width: 100%;
+						height: auto;
+					}
+				}
+				&--text {
+					background-color: #a9d9b1;
+					height: 15rem;
+					text-align: center;
+					&__title {
+						font-size: 4rem;
+						// padding: 0.5rem 0;
+					}
+					&__details {
+						font-size: 1.4rem;
+						width: 70%;
+						margin: auto;
+					}
+				}
+			}
+		}
+		&--form {
+			padding-top: 1rem;
+			background-color: #56636b;
+			color: white;
+			&__disclaimer {
+				font-size: 1.6rem;
+				text-align: center;
+				&--part {
+					display: inline-block;
+				}
+			}
+			&__flexbox {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: flex-end;
+				padding: 0 1rem 1rem 1rem;
+				&--logo {
+					background-image: url("assets/logo_black_png.png");
+					height: 7rem;
+					width: 7rem;
+					background-size: contain;
+					background-repeat: no-repeat;
+				}
+				&--call {
+					display: none;
+				}
+				&--details {
+					padding-bottom: 0.5rem;
+					padding-right: 1rem;
+				}
+				&--chunk {
+					display: flex;
+					flex-direction: row;
+					align-items: flex-end;
+					& button {
+						border: none;
+						background-color: #ebeee4;
+						height: 2.3rem;
+						margin: 0 0.25rem;
+						font-weight: bold;
+					}
+					& input {
+						height: 2.3rem;
+						width: 10rem;
+						min-width: 8rem;
+						font-weight: bold;
+						color: black;
+						margin: 0 0.25rem;
+						padding-right: 0.5rem;
+						&::placeholder {
+							font-weight: bold;
+							color: black;
+						}
+					}
+					&__secret {
+						text-align: center;
+						font-size: 1.2rem;
+						font-weight: bold;
+						&--number {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1080px) {
+	.oz-nadlan--landing-page {
+		background-color: #56636b;
+		padding: 0;
+		&__logo {
+			padding-top: 1rem;
+			padding-bottom: 0.5rem;
+			width: 350px;
+			height: auto;
+			margin: auto;
+			img {
+				position: relative;
+				width: 350px;
+				height: auto;
+			}
+		}
+		&__wrapper {
+			&--images-container {
+				flex-direction: column;
+				&__first {
+					&--image {
+						height: 500px;
+					}
+					&--text {
+						height: 25rem;
+						&__title {
+							font-size: 8rem;
+							padding-bottom: 0.5rem;
+						}
+						&__details {
+							width: 90%;
+							font-size: 3rem;
+						}
+					}
+				}
+				&__second {
+					margin-top: 7rem;
+					&--image {
+						height: 500px;
+					}
+					&--text {
+						height: 25rem;
+						&__title {
+							font-size: 7rem;
+						}
+						&__details {
+							width: 80%;
+							font-size: 3rem;
+						}
+					}
+				}
+			}
+			&--form {
+				&__disclaimer {
+					font-size: 3rem;
+					&--part {
+						display: block;
+					}
+				}
+				&__flexbox {
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					&--logo {
+						margin-top: 1rem;
+						padding-top: 2rem;
+						background-image: url("assets/logo_white_png.png");
+						width: 23rem;
+						height: 23rem;
+					}
+					&--details {
+						font-size: 2.3rem;
+						padding: 0;
+					}
+					&--call {
+						display: block;
+						margin: auto;
+						padding: 1rem;
+						& img {
+							width: 100px;
+							height: 100px;
+						}
+					}
+					&--chunk {
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+						width: 100%;
+						& button {
+							width: 80%;
+							height: 5rem;
+							font-size: 3rem;
+							text-align: right;
+							color: #56636b;
+							margin: 0.5rem 0;
+							padding-right: 2rem;
+							background-color: #d8e0e3;
+						}
+						& input {
+							order: 1;
+							padding-right: 2rem;
+							width: 80%;
+							border: none;
+							margin: 0.5rem 0;
+							height: 5rem;
+							padding-top: 1.3rem;
+							&::placeholder {
+								font-size: 3rem;
+								color: #56636b;
+							}
+						}
+						&__project-site {
+							order: 3;
+							text-align: center !important;
+							padding: 0 !important;
+							margin: 3rem 0 !important;
+						}
+						&__secret {
+							order: 2;
+							width: 100%;
+							&--number {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
