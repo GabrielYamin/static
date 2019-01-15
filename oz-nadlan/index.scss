@@ -1,10 +1,15 @@
+@font-face {
+	font-family: "OEMeodedPashutCondencedPro-Light";
+	src: url("/assets/Fonts/OEMeodedPashutCondencedPro-Light.otf") format("opentype");
+}
+
 body,
 html {
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
 	direction: rtl;
-	font-family: "Heebo", sans-serif;
+	font-family: "OEMeodedPashutCondencedPro-Light";
 }
 
 body {
@@ -13,14 +18,13 @@ body {
 	justify-content: center;
 }
 
-.spacing {
+.separator {
 	color: white;
 	font-size: 1.8rem;
 }
 
 .oz-nadlan--landing-page {
 	background-color: white;
-	padding-top: 0.5rem;
 	&__logo {
 		padding-top: 0.5rem;
 		width: 150px;
@@ -30,70 +34,50 @@ body {
 			position: absolute;
 			width: 150px;
 			height: auto;
-			border: 1px solid #56636b;
 		}
 	}
 	&__wrapper {
-		padding-top: 1rem;
-		max-width: 1300px;
+		padding: 1rem;
+		max-width: 1200px;
 		margin: auto;
-		&--images-container {
+		.images-container {
 			display: flex;
 			flex-direction: row;
-			&__first {
+			&__container {
 				flex: 1;
-				&--image {
-					background-image: url("assets/Penthouse 3 half - Print.jpg");
-					height: 350px;
-					background-size: cover;
-					img {
-						width: 100%;
-						height: auto;
-					}
-				}
-				&--text {
-					background-color: #bdd3e0;
-					height: 15rem;
-					text-align: center;
-					&__title {
-						font-size: 4rem;
-						// padding: 0.5rem 0;
-					}
-					&__details {
-						font-size: 1.4rem;
-						width: 70%;
-						margin: auto;
-					}
-				}
-			}
-			&__second {
-				flex: 1;
-				&--image {
-					background-image: url("assets/Dira_4_Gan._PRINT.jpg");
-					height: 350px;
-					background-size: cover;
-					img {
-						width: 100%;
-						height: auto;
-					}
-				}
-				&--text {
+				.right {
 					background-color: #a9d9b1;
-					height: 15rem;
+				}
+
+				.left {
+					background-color: #bdd3e0;
+				}
+				&--image {
+					// background-size: contain;
+					// background-repeat: no-repeat;
+					max-height: 400px;
+					img {
+						width: 100%;
+						max-height: 400px;
+					}
+				}
+				&--text {
+					height: 13rem;
+					margin-top: -2rem;
 					text-align: center;
 					&__title {
-						font-size: 4rem;
+						font-size: 4.5rem;
 						// padding: 0.5rem 0;
 					}
 					&__details {
-						font-size: 1.4rem;
-						width: 70%;
-						margin: auto;
+						font-size: 2rem;
+						// width: 70%;
+						margin: 0 auto;
 					}
 				}
 			}
 		}
-		&--form {
+		.footer {
 			padding-top: 1rem;
 			background-color: #56636b;
 			color: white;
@@ -111,7 +95,7 @@ body {
 				align-items: flex-end;
 				padding: 0 1rem 1rem 1rem;
 				&--logo {
-					background-image: url("assets/logo_black_png.png");
+					background-image: url("assets/logo_white_png.png");
 					height: 7rem;
 					width: 7rem;
 					background-size: contain;
@@ -122,13 +106,14 @@ body {
 				}
 				&--details {
 					padding-bottom: 0.5rem;
-					padding-right: 1rem;
+					padding-right: 0.5rem;
 				}
 				&--chunk {
 					display: flex;
 					flex-direction: row;
 					align-items: flex-end;
 					& button {
+						font-family: "Heebo", sans-serif;
 						border: none;
 						background-color: #ebeee4;
 						height: 2.3rem;
@@ -136,6 +121,7 @@ body {
 						font-weight: bold;
 					}
 					& input {
+						font-family: "Heebo", sans-serif;
 						height: 2.3rem;
 						width: 10rem;
 						min-width: 8rem;
@@ -179,42 +165,43 @@ body {
 			}
 		}
 		&__wrapper {
-			&--images-container {
+			padding: 1rem 0 0 0;
+			.images-container {
+				.penthouse {
+					background-image: url("assets/penthouse_desktop.png");
+				}
+
+				.garden {
+					background-image: url("assets/garden_desktop.png");
+				}
+				.spacing {
+					margin-top: 8rem;
+				}
 				flex-direction: column;
-				&__first {
+				&__container {
+					img {
+						display: none;
+					}
 					&--image {
-						height: 500px;
+						background-size: cover;
+						background-repeat: no-repeat;
+						height: 42rem;
+						max-height: unset;
 					}
 					&--text {
 						height: 25rem;
 						&__title {
-							font-size: 8rem;
+							font-size: 9rem;
 							padding-bottom: 0.5rem;
 						}
 						&__details {
 							width: 90%;
-							font-size: 3rem;
-						}
-					}
-				}
-				&__second {
-					margin-top: 7rem;
-					&--image {
-						height: 500px;
-					}
-					&--text {
-						height: 25rem;
-						&__title {
-							font-size: 7rem;
-						}
-						&__details {
-							width: 80%;
-							font-size: 3rem;
+							font-size: 3.5rem;
 						}
 					}
 				}
 			}
-			&--form {
+			.footer {
 				&__disclaimer {
 					font-size: 3rem;
 					&--part {
