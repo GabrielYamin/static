@@ -18,8 +18,8 @@ body {
 }
 
 .separator {
-  color: white;
   font-size: 1.8rem;
+  color: white;
 }
 
 .oz-nadlan--landing-page {
@@ -143,6 +143,11 @@ body {
 }
 
 @media (max-width: 1080px) {
+  .separator {
+    font-size: 4.6rem;
+    line-height: 0.7;
+  }
+
   .oz-nadlan--landing-page {
     background-color: #56636b;
     padding: 0;
