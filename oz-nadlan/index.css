@@ -1,6 +1,6 @@
 @font-face {
   font-family: "OEMeodedPashutCondencedPro-Light";
-  src: url("/assets/Fonts/OEMeodedPashutCondencedPro-Light.otf") format("opentype");
+  src: url("./assets/fonts/OEMeodedPashutCondencedPro-Light.otf") format("opentype");
 }
 body,
 html {
@@ -15,6 +15,34 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.btn {
+  font-family: "Heebo", sans-serif;
+  border: none;
+  background-color: #ebeee4;
+  height: 2.3rem;
+  margin: 0 0.25rem;
+  font-weight: bold;
+  font-size: 0.7rem;
+  outline: none;
+  padding: 0 1rem;
+  text-decoration: none;
+  line-height: 2.3rem;
+  color: #000000;
+  min-width: 5rem;
+  text-align: center;
+  cursor: pointer;
+}
+.btn:visited, .btn:active {
+  color: #000000;
+}
+
+.crm-form {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
 }
 
 .separator {
@@ -37,6 +65,7 @@ body {
   height: auto;
 }
 .oz-nadlan--landing-page__wrapper {
+  padding: 1rem;
   max-width: 1200px;
   margin: auto;
 }
@@ -45,6 +74,7 @@ body {
   flex-direction: row;
 }
 .oz-nadlan--landing-page__wrapper .images-container__container {
+  background-color: #bdd3e0;
   flex: 1;
 }
 .oz-nadlan--landing-page__wrapper .images-container__container .right {
@@ -53,24 +83,30 @@ body {
 .oz-nadlan--landing-page__wrapper .images-container__container .left {
   background-color: #bdd3e0;
 }
+.oz-nadlan--landing-page__wrapper .images-container__container--image.garden {
+  background-color: #bdd3e0;
+}
+.oz-nadlan--landing-page__wrapper .images-container__container--image.penthouse {
+  background-color: #a9d9b1;
+}
 .oz-nadlan--landing-page__wrapper .images-container__container--image img {
   width: 100%;
   height: auto;
 }
 .oz-nadlan--landing-page__wrapper .images-container__container--text {
   height: 13rem;
-  margin-top: -2rem;
+  margin-top: -1rem;
   text-align: center;
 }
 .oz-nadlan--landing-page__wrapper .images-container__container--text__title {
   font-size: 4.5rem;
 }
 .oz-nadlan--landing-page__wrapper .images-container__container--text__details {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0 auto;
 }
 .oz-nadlan--landing-page__wrapper .footer {
-  padding-top: 1rem;
+  padding-top: 2rem;
   background-color: #56636b;
   color: white;
 }
@@ -88,12 +124,10 @@ body {
   align-items: flex-end;
   padding: 0 1rem 1rem 1rem;
 }
-.oz-nadlan--landing-page__wrapper .footer__flexbox--logo {
-  background-image: url("assets/logo_white_png.png");
-  height: 7rem;
-  width: 7rem;
-  background-size: contain;
-  background-repeat: no-repeat;
+.oz-nadlan--landing-page__wrapper .footer__flexbox--logo img {
+  width: 6rem;
+  height: auto;
+  margin-right: 1rem;
 }
 .oz-nadlan--landing-page__wrapper .footer__flexbox--call {
   display: none;
@@ -101,29 +135,30 @@ body {
 .oz-nadlan--landing-page__wrapper .footer__flexbox--details {
   padding-bottom: 0.5rem;
   padding-right: 0.5rem;
+  margin-left: 1rem;
 }
 .oz-nadlan--landing-page__wrapper .footer__flexbox--chunk {
+  flex: 1;
+  width: 100%;
+  justify-content: flex-end;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
 }
 .oz-nadlan--landing-page__wrapper .footer__flexbox--chunk button {
-  font-family: "Heebo", sans-serif;
-  border: none;
-  background-color: #ebeee4;
-  height: 2.3rem;
   margin: 0 0.25rem;
   font-weight: bold;
 }
 .oz-nadlan--landing-page__wrapper .footer__flexbox--chunk input {
+  border: none;
   font-family: "Heebo", sans-serif;
-  height: 2.3rem;
-  width: 10rem;
+  width: 8rem;
   min-width: 8rem;
   font-weight: bold;
   color: black;
   margin: 0 0.25rem;
   padding-right: 0.5rem;
+  height: 2.2rem;
 }
 .oz-nadlan--landing-page__wrapper .footer__flexbox--chunk input::placeholder {
   font-weight: bold;
@@ -139,6 +174,22 @@ body {
 }
 
 @media (max-width: 1080px) {
+  .crm-form {
+    text-align: center;
+    display: block;
+  }
+
+  .btn {
+    height: 5rem;
+    width: 80%;
+    line-height: 5rem;
+    color: #56636b;
+    font-size: 3rem;
+  }
+  .btn:active, .btn:visited {
+    color: #56636b;
+  }
+
   .separator {
     font-size: 4.6rem;
     line-height: 0.7;
@@ -196,7 +247,8 @@ body {
     font-size: 3.5rem;
   }
   .oz-nadlan--landing-page__wrapper .footer__disclaimer {
-    font-size: 3rem;
+    font-size: 3.1rem;
+    line-height: 1.2;
   }
   .oz-nadlan--landing-page__wrapper .footer__disclaimer--part {
     display: block;
@@ -207,14 +259,15 @@ body {
     align-items: center;
   }
   .oz-nadlan--landing-page__wrapper .footer__flexbox--logo {
-    margin-top: 1rem;
-    padding-top: 2rem;
-    background-image: url("assets/logo_white_png.png");
-    width: 23rem;
-    height: 23rem;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  .oz-nadlan--landing-page__wrapper .footer__flexbox--logo img {
+    width: 13rem;
+    height: auto;
   }
   .oz-nadlan--landing-page__wrapper .footer__flexbox--details {
-    font-size: 2.3rem;
+    font-size: 3.6rem;
+    line-height: 1.9;
     padding: 0;
   }
   .oz-nadlan--landing-page__wrapper .footer__flexbox--call {
@@ -231,6 +284,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+    flex: unset;
   }
   .oz-nadlan--landing-page__wrapper .footer__flexbox--chunk button {
     width: 80%;
@@ -239,8 +293,6 @@ body {
     text-align: right;
     color: #56636b;
     margin: 0.5rem 0;
-    padding-right: 2rem;
-    background-color: #d8e0e3;
   }
   .oz-nadlan--landing-page__wrapper .footer__flexbox--chunk input {
     order: 1;
@@ -249,7 +301,9 @@ body {
     border: none;
     margin: 0.5rem 0;
     height: 5rem;
-    padding-top: 1.3rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: #56636b;
   }
   .oz-nadlan--landing-page__wrapper .footer__flexbox--chunk input::placeholder {
     font-size: 3rem;
@@ -257,9 +311,9 @@ body {
   }
   .oz-nadlan--landing-page__wrapper .footer__flexbox--chunk__project-site {
     order: 3;
-    text-align: center !important;
-    padding: 0 !important;
-    margin: 3rem 0 !important;
+    text-align: center;
+    padding: 0;
+    margin: 3rem 0;
   }
   .oz-nadlan--landing-page__wrapper .footer__flexbox--chunk__secret {
     order: 2;
