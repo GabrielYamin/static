@@ -37,7 +37,6 @@ body {
   height: auto;
 }
 .oz-nadlan--landing-page__wrapper {
-  padding: 1rem;
   max-width: 1200px;
   margin: auto;
 }
@@ -54,12 +53,9 @@ body {
 .oz-nadlan--landing-page__wrapper .images-container__container .left {
   background-color: #bdd3e0;
 }
-.oz-nadlan--landing-page__wrapper .images-container__container--image {
-  max-height: 400px;
-}
 .oz-nadlan--landing-page__wrapper .images-container__container--image img {
   width: 100%;
-  max-height: 400px;
+  height: auto;
 }
 .oz-nadlan--landing-page__wrapper .images-container__container--text {
   height: 13rem;
