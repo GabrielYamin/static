@@ -172,7 +172,15 @@ body {
 		height: 99vh;
 		width: auto;
 	}
-
+	.crm-form__number {
+		position: absolute;
+    top: -0.5rem;
+    left: 5.5vh;
+    color: white;
+    direction: ltr;
+    font-size: 1.5rem;
+    font-weight: bold;
+	}
 	.crm-form {
 		width: 80vh;
 		margin: auto;
@@ -233,7 +241,7 @@ body {
 		font-size: 1.8vh;
 		line-height: 1.8vh;
 		height: 4.05vh;
-		line-height: 3.9vh;
+		line-height: 4.1vh;
 		margin-left: 0.6vh;
 		order: 1;
 	}
