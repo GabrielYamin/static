@@ -4,8 +4,22 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Demystifying Email Design</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			.main-container {
+				width: 600px;
+			}
+			.wrapper-container {
+				width: 500px;
+			}
+			.fixed-width {
+				width: 450px;
+			}
+			.small-table {
+				width: 258px;
+			}
+		</style>
 	</head>
-	<body width="600" style="margin: 0; padding: 0; direction: rtl;">
+	<body>
 		<table height="40"></table>
 		<table
 			align="center"
@@ -13,12 +27,12 @@
 			dir="rtl"
 			cellpadding="0"
 			cellspacing="0"
-			width="600"
-			style="text-align: right; border-radius: 40px;"
+			class="main-container" width="500"
+			style="text-align: right; border-radius: 40px; direction: rtl;"
 		>
 			<tr>
 				<td>
-					<table align="center" cellspacing="0" cellpadding="0" width="500">
+					<table align="center" cellspacing="0" cellpadding="0" class="wrapper-container">
 						<tr height="50"></tr>
 						<tr>
 							<td>
@@ -34,7 +48,7 @@
 						<tr height="20"></tr>
 						<tr>
 							<td>
-								<table width="450">
+								<table class="fixed-width">
 									<tr height="22">
 										<td>אדיב אוחיון שלום,</td>
 									</tr>
@@ -48,7 +62,7 @@
 									<tr height="7"></tr>
 									<tr>
 										<td>
-											<table width="450">
+											<table class="fixed-width">
 												<tr style="font-weight: bold">
 													<td width="50%">לאן...</td>
 													<td width="50%">מתי...</td>
@@ -109,23 +123,23 @@
 									<tr height="10"></tr>
 									<tr>
 										<td>
-											<table width="450">
+											<table class="fixed-width">
 												<tr style="font-weight: bold;">
 													<td>תיאור הפריט</td>
-													<td dir="ltr" style="text-align: left;">₪ILS</td>
+													<td dir="ltr" style="text-align: left; direction: ltr;">₪ILS</td>
 												</tr>
 											</table>
 										</td>
 									</tr>
-									<tr width="450">
+									<tr class="fixed-width">
 										<td style="border-bottom: 1px dotted #535353;"></td>
 									</tr>
 									<tr>
 										<td>
-											<table width="450">
+											<table class="fixed-width">
 												<tr>
 													<td>גופיית קוקאינט צוללן נשים / גברים שחור - M</td>
-													<td dir="ltr" style="text-align: left;">₪140</td>
+													<td dir="ltr" style="text-align: left; direction: ltr;">₪140</td>
 												</tr>
 												<tr height="2"></tr>
 												<tr>
@@ -134,25 +148,25 @@
 											</table>
 										</td>
 									</tr>
-									<tr width="450">
+									<tr class="fixed-width">
 										<td style="border-bottom: 1px dotted #535353;"></td>
 									</tr>
 									<tr>
 										<td>
-											<table width="258" align="left">
+											<table class="small-table" align="left">
 												<tr>
 													<td>סה"כ ביניים</td>
-													<td dir="ltr" style="text-align: left;">₪140</td>
+													<td dir="ltr" style="text-align: left; direction: ltr;">₪140</td>
 												</tr>
 												<tr height="2"></tr>
 												<tr>
 													<td>משלוח</td>
-													<td dir="ltr" style="text-align: left;">₪0</td>
+													<td dir="ltr" style="text-align: left; direction: ltr;">₪0</td>
 												</tr>
 												<tr height="2"></tr>
 												<tr>
 													<td>סה"כ</td>
-													<td dir="ltr" style="text-align: left;">₪140</td>
+													<td dir="ltr" style="text-align: left; direction: ltr;">₪140</td>
 												</tr>
 											</table>
 										</td>
